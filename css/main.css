@@ -5,14 +5,14 @@
   float: right;
   margin-right: 25px;
 }
-.top-navigation li {
-  list-style: none;
-  display: inline-block;
-  text-align: right;
-  padding: 5px 10px 0 0;
-  vertical-align: bottom;
-  margin:5px 5px 0 0;
-  font-size: 13px;
+  .top-navigation li {
+    list-style: none;
+    display: inline-block;
+    text-align: right;
+    padding: 5px 10px 0 0;
+    vertical-align: bottom;
+    margin:5px 5px 0 0;
+    font-size: 13px;
 }
 .span-button {
   background-color: #f2f2f2;
@@ -140,4 +140,20 @@ a {
 }
 #socialIcons a {
   color: #FFFFFF;
+}
+@media (max-width:400px){
+  .bottom-site-links {
+    width:100%;
+    text-align:center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media (max-width:400px){
+  .left-site-links, .right-site-links {
+    text-align:center;
+    padding-right: 0;
+    padding-left: 0;
+    float:none; /* helps to remove the float from original*/
+  }
 }
