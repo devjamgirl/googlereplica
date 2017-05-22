@@ -141,19 +141,35 @@ a {
 #socialIcons a {
   color: #FFFFFF;
 }
-@media (max-width:400px){
+@media (max-width:639px){
+  .search-box input {
+    width: 50%;
+  }
+}
+@media (max-width:523px){
+  img.profile-img {
+    display:none;
+  }
+  span.span-button {
+    display:none;
+  }
   .bottom-site-links {
     width:100%;
     text-align:center;
     padding-right: 0;
     padding-left: 0;
+    font-size: 5px;
+}
+.left-site-links, .right-site-links {
+  text-align:center;
+  padding-right: 0;
+  padding-left: 0;
+  float:none; /* helps to remove the float from original*/
+font-size: 5px;
   }
 }
-@media (max-width:400px){
-  .left-site-links, .right-site-links {
-    text-align:center;
-    padding-right: 0;
-    padding-left: 0;
-    float:none; /* helps to remove the float from original*/
+@media (max-width:320px){
+  html.fa-events-icons-ready {
+    text-align: center;
   }
 }
